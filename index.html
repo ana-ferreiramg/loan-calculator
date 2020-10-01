@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="inputs">
+                <label for="loan_amount">Loan Amount</label>
+                <i class="fas fa-dollar-sign" id="dollar-sign"></i>
+                <input id="loan_amount" type="number" name="loan_amount" min="1" max="5000000">
+                <div class="bar-bottom"></div>
+            </div>
+            <div class="inputs">
+                <label for="interest_rate">Interest Rate</label>
+                <i class="fas fa-percent" id="percent-icon"></i>
+                <input id="interest_rate" type="number" name="interest_rate" min="0" max="100" step="0.1">
+                <div class="bar-bottom"></div>
+            </div>
+            <div class="inputs">
+                <label for="months_to_pay">Months To Pay</label>
+                <i class="fas fa-calendar-day" id="calendar-icon"></i>
+                <input id="months_to_pay" type="number" name="months_to_pay" min="1" max="300" step="1">
+                <div class="bar-bottom"></div>
+            </div>
+        </div>
+        <div class="result">
+            <p>Monthly Payment</p>
+            <span id="monthly_payment"></span>
+        </div>
+        <div class="btn">
+            <button type="button" onclick="calc()">Apply</button>
+        </div>
+    </div>    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
