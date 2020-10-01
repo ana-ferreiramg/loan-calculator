@@ -1,6 +1,6 @@
 # Loan Calculator
 
 <p align="center">
-    <img src="LoanCalculator.gif"/>
-    <img src="LoanCalculatorMobile.gif"/>
+    <img src="img/LoanCalculator.gif"/>
+    <img src="img/LoanCalculatorMobile.gif"/>
 </p>
